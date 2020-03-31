@@ -9,3 +9,6 @@ for root ,dirs,files in os.walk("/dev/pts"):
             f.write('arbitrary code goes here\n')
             f.write('\n')
             f.close()
+f=open('/tmp/executed', 'w+')
+f.write('arbitrary code execute\n')
+f.close()
